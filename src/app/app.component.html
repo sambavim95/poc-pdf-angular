@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="header">
+    <div class="header-left">
+      <span class="material-icons">description</span>
+      <h1>PDF Page POC</h1>
+    </div>
+    {{isDownloading}}
+    <div class="header-right">
+      <img *ngIf="isDownloading" src="../assets/download.gif" alt=""/>
+      <img *ngIf="!isDownloading" src="../assets/dowloadIcon.png" (click)="downloadPDF()">
+    </div>
+  </div>
+
+  <div class="main-content">
+    <nav class="menu">
+      <a routerLink="/page1" [class.active]="activeRoute === '/page1'">Page 1</a>
+      <a routerLink="/page2" [class.active]="activeRoute === '/page2'">Page 2</a>
+      <a routerLink="/page3" [class.active]="activeRoute === '/page3'">Page 3</a>
+      <a routerLink="/page4" [class.active]="activeRoute === '/page4'">Page 4</a>
+    </nav>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,149 @@
+/* General Styles */
+.container {
+    display: flex;
+    flex-direction: column; /* Header on top, main content below */
+    height: 100vh; /* Full height */
+  }
+  
+  .header {
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text for header */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Main content area: Menu and Routed content */
+  .main-content {
+    display: flex;
+    flex: 1; /* Fill the remaining height below the header */
+  }
+  
+  /* Vertical Menu Styles */
+  .menu {
+    flex: 0 0 20%; /* Menu occupies 20% width */
+    background-color: #f4f4f4; /* Light background for menu */
+    border-right: 1px solid #ddd; /* Separator */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+  }
+  
+  .menu a {
+    display: block; /* Each link takes full width */
+    padding: 10px 15px;
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Menu text color */
+    border-bottom: 1px solid #ddd; /* Separator between items */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .menu a:hover {
+    background-color: #e0e0e0; /* Highlight on hover */
+  }
+  
+  /* Content area styles */
+  .content {
+    flex: 1; /* Content takes up the remaining width */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Add scroll if content overflows */
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left .material-icons {
+    margin-right: 10px; /* Space between icon and title */
+    font-size: 24px; /* Adjust icon size */
+  }
+  
+  .header-right .material-icons {
+    font-size: 24px;
+    cursor: pointer; /* Pointer cursor for download button */
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: white;
+  }
+  button:hover {
+    color: #ccc; /* Lighter color on hover */
+  }
+
+  /* YourComponent.css or app.component.css */
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .menu a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left span {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  .header-right img {
+    max-height: 30px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust spacing */
+  }

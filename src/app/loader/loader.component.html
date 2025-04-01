@@ -1,0 +1,5 @@
+<div class="loader-container" *ngIf="isLoading">
+    <div class="backdrop"></div>
+    <div class="loader"></div>
+</div>
+<ng-content *ngIf="!isLoading"></ng-content>
